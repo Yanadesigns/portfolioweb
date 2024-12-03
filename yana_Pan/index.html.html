@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Lekton', sans-serif;
+            background-color: #111111;
+            color: #FFFFFF;
+        }
+
+        /* Container for entire page */
+        #container {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        /* Header */
+        #header {
+            background-color: #343434;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        #header h1 {
+            font-family: 'Jacquarda Bastarda 9', serif;
+            font-size: 48px;
+            color: #7AC4AF;
+            margin: 0;
+        }
+
+        /* Navigation (Home, About, Portfolio, Contact) */
+        #nav {
+            width: 100%;
+            background-color: #111111;
+            padding: 10px 0;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #nav ul li {
+            margin: 0 15px;
+        }
+
+        #nav a {
+            font-family: 'Lekton', sans-serif;
+            font-size: 18px;
+            color: #7AC4AF;
+            text-decoration: none;
+        }
+
+        #nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section */
+        #main {
+            padding: 50px;
+            width: calc(100% - 250px); /* Make room for the sidebar */
+            box-sizing: border-box;
+            margin-right: 250px; /* Make sure the main content starts before the sidebar */
+        }
+
+        #main h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 36px;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        #main p {
+            font-family: 'Lekton', sans-serif;
+            font-size: 18px;
+            color: #FFFFFF;
+            line-height: 1.6;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        #main img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Sidebar (Moved to the Right) */
+        #sidebar1 {
+            background-color: #7AC4AF;
+            color: #343434;
+            padding: 20px;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            right: 0; /* Position sidebar to the right */
+            bottom: 0;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        #sidebar1 h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        #sidebar1 p {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        /* Footer (Copyright) */
+        #footer {
+            background-color: #111111;
+            color: #FFFFFF;
+            text-align: left;
+            padding: 10px;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 14px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            /* Stack header, nav, and main section vertically on smaller screens */
+            #container {
+                flex-direction: column;
+            }
+
+            #sidebar1 {
+                width: 100%;
+                position: relative;
+                margin-top: 20px;
+                height: auto;
+            }
+
+            #main {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+            }
+
+            #nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Header Section -->
+        <div id="header">
+            <h1>MY PORTFOLIO</h1>
+        </div>
+
+        <!-- Navigation -->
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Section -->
+        <div id="main">
+            <h1>YANA PAN</h1>
+
+            <img src="picture.jpg" alt="my photo">
+
+            <p>Hello! I’m Yana, a passionate and innovative graphic designer based in Toronto. With a keen eye for detail and a love for creativity, I specialize in bringing brands to life through compelling visuals and strategic design.</p>
+            <p>I’m working on visual identities, branding and editorial design.</p>
+        </div>
+
+        <!-- Sidebar Section -->
+        <div id="sidebar1">
+            <h1>Sidebar1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas explicabo, quis iste soluta distinctio laborum fuga sint quam consequuntur, natus corporis sequi dolorum earum reiciendis impedit iure vel deserunt aliquid?</p>
+        </div>
+
+        <!-- Footer Section -->
+        <div id="footer">
+            <p>&copy; Copyright 2024 Yana Pan. All Rights Reserved.</p>
+        </div>
+
+    </div> <!-- end container div -->
+</body>
+
+</html>
